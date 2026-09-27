@@ -1,0 +1,18 @@
+{
+  "$schema": "https://unpkg.com/wrangler/config-schema.json",
+  "name": "bramley-works",
+  "main": "worker.js",
+  "compatibility_date": "2026-09-01",
+  "account_id": "600ed595e7afbe5159cbfcf2e25aee08",
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "not_found_handling": "404-page",
+    "html_handling": "auto-trailing-slash"
+  },
+  "routes": [
+    { "pattern": "bramley.works", "custom_domain": true },
+    { "pattern": "www.bramley.works", "custom_domain": true }
+  ],
+  "observability": { "enabled": true }
+}
